@@ -2,7 +2,7 @@
 /* Center all the elements in it */
 .container {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -15,6 +15,43 @@
     padding: .5em;
     width: 80%;
 }
+
 #submit {
-    margin: 1em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.btn, .btn2{
+     width: 250px;
+     height: 50px;
+     font-size: 30px;
+     text-align: center;
+     line-height: 100px;
+     color: rgba(255,255,255,0.9);
+     border-radius: 50px;
+     background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
+     background-size: 600%;
+     animation: anime 16s linear infinite;
+  }
+
+.btn2{
+     position: absolute;
+     margin-top: -70px;
+     z-index: -1;
+     filter: blur(30px);
+     opacity: 0.8;
+  }
+     
+ @keyframes anime {
+   0%{
+     background-position: 0% 50%;
+   }
+   50%{
+     background-position: 100% 50%;
+   }
+   100%{
+     background-position: 0% 50%;
+   }
+ }
